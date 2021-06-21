@@ -2,7 +2,7 @@
 
 In this project, I implemented the Error-State Extended Kalman Filter (ES-EKF) to localize a vehicle using data from the CARLA simulator. The project has the following parts.
 
-## Implementation of the ES-EKF
+# Implementation of the ES-EKF
 
 In this part, I wrote code to perform the filter prediction step and the correction step. The filter relies on IMU data to propagate the state forward in time, and GPS and LIDAR position updates to correct the state estimate. The sensor data have been prepackaged for you - it is possible to visualize the output of the estimator and compare it to the ground truth vehicle position. The complete filter implementation will be tested by comparing the estimated vehicle position (produced by my code) with the ground truth position, for a 'hold out' portion of the trajectory (i.e., for which ground truth is not provided).
 
