@@ -16,6 +16,12 @@ For this part of the motion planner, we will be editing collision_checker.py. In
 ## Path Selection
 The path selection portion of the project involves us evaluating an objective function over the generated path set to select the best path. The goal of this section is to eliminate paths that are in collision with static obstacles, and to select paths that both track the centerline of the global path. To encourage robust obstacle avoidance, we will also need to add a term that penalizes how close the planned path is to other paths in the path set that are in collision with a static obstacle. we will implement path selection in the select_best_path_index() function within collision_checker.py.
 
+![](controller_output/trajectory.png)
+
 ## Velocity Profile Generation
 The last step of the project is velocity profile generation. This velocity planner will not handle all edge cases, but will handle stop signs, lead dynamic obstacles, as well as nominal lane maintenance. This is all captured in the compute_velocity_profile() function in velocity_planner.py. we will be implementing the physics functions at the end of the file which will be used for velocity planning.
+
+![](controller_output/forward_speed.png)
+![](controller_output/steer_output.png)
+![](controller_output/throttle_output.png)
 
