@@ -125,8 +125,6 @@ class BehaviouralPlanner:
               self._state = DECELERATE_TO_STOP
             # ------------------------------------------------------------------
 
-            pass
-
         # In this state, check if we have reached a complete stop. Use the
         # closed loop speed to do so, to ensure we are actually at a complete
         # stop, and compare to STOP_THRESHOLD.  If so, transition to the next
@@ -137,8 +135,6 @@ class BehaviouralPlanner:
             if closed_loop_speed < STOP_THRESHOLD:
                 self._state = STAY_STOPPED
             # ------------------------------------------------------------------
-
-            pass
 
         # In this state, check to see if we have stayed stopped for at
         # least STOP_COUNTS number of cycles. If so, we can now leave

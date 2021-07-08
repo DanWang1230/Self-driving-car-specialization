@@ -99,7 +99,7 @@ class LocalPlanner:
         # Compute the center goal state in the local frame using 
         # the ego state. The following code will transform the input
         # goal state to the ego vehicle's local frame.
-        # The goal state will be of the form (x, y, t, v).
+        # The goal state in the local frame will be of the form (x, y, t, v).
         goal_state_local = copy.copy(goal_state)
 
         # Translate so the ego state is at the origin in the new frame.
